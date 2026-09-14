@@ -1,0 +1,113 @@
+.special-words{min-height:min(57vw,555px);padding:clamp(30px,7vw,75px) clamp(20px,8vw,85px);display:grid;align-content:center;gap:15px;border-radius:34px;background:linear-gradient(150deg,#fff1f7,#eedfff 52%,#ddf8ff);box-shadow:inset 0 0 0 7px #ffffff90,0 16px 34px #714b7438;animation:wordsFade .8s both}.little-intro{margin:0 0 12px;color:#b85084;text-transform:uppercase;font-size:11px;font-weight:bold;letter-spacing:.17em}.love-line{margin:0;opacity:0;color:#624463;font-size:clamp(1.06rem,2.6vw,1.4rem);line-height:1.65;animation:lineReveal 1s forwards}.love-line:nth-child(2){animation-delay:.5s}.love-line:nth-child(3){animation-delay:2.3s}.love-line:nth-child(4){animation-delay:4.1s}.love-line:nth-child(5){animation-delay:5.9s}.special-words h2{font:clamp(1.8rem,5vw,3.5rem)/1.28 Pacifico,cursive;color:#c04f86;text-shadow:0 2px #fff;margin:12px 0 0}@keyframes wordsFade{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}@keyframes lineReveal{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}@media(max-width:600px){.special-words{border-radius:25px;min-height:370px}}
+/* =================================
+   SIDE HAPPY BIRTHDAY WISHES
+   ================================= */
+
+.side-wishes {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    z-index: 100;
+    pointer-events: none;
+}
+
+.side-wishes span {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+
+    color: #ff5794;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    animation: sideBounce 1.8s ease-in-out infinite;
+}
+
+.left-wishes {
+    left: 25px;
+}
+
+.right-wishes {
+    right: 25px;
+}
+
+/* Each letter moves at a different time */
+.side-wishes span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.side-wishes span:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.side-wishes span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.side-wishes span:nth-child(4) {
+    animation-delay: 0.45s;
+}
+
+.side-wishes span:nth-child(5) {
+    animation-delay: 0.6s;
+}
+
+.side-wishes span:nth-child(6) {
+    animation-delay: 0.75s;
+}
+
+.side-wishes span:nth-child(7) {
+    animation-delay: 0.9s;
+}
+
+.side-wishes span:nth-child(8) {
+    animation-delay: 1.05s;
+}
+
+@keyframes sideBounce {
+    0%, 100% {
+        transform: translateX(0) rotate(-3deg);
+    }
+
+    50% {
+        transform: translateX(6px) rotate(3deg);
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .left-wishes {
+        left: 5px;
+    }
+
+    .right-wishes {
+        right: 5px;
+    }
+
+    .side-wishes {
+        gap: 5px;
+    }
+
+    .side-wishes span {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
