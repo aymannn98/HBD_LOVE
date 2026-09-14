@@ -1,0 +1,6 @@
+Put one MP3 music file in this folder.
+
+Name it exactly:
+song.mp3
+
+It will play from the music player on the birthday page.
